@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		9A905D0B20D58752008BF422 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A905D0A20D58752008BF422 /* main.swift */; };
+		9A905D1320D58851008BF422 /* Combattant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A905D1220D58851008BF422 /* Combattant.swift */; };
+		9A9A83B320D95A5400CDC18C /* Mage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A9A83B220D95A5400CDC18C /* Mage.swift */; };
+		9A9A83B520D95A6100CDC18C /* Nain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A9A83B420D95A6100CDC18C /* Nain.swift */; };
+		9A9A83B720D95A7000CDC18C /* Lutin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A9A83B620D95A7000CDC18C /* Lutin.swift */; };
+		9A9A83B920D95A7D00CDC18C /* Colosse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A9A83B820D95A7D00CDC18C /* Colosse.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +30,11 @@
 /* Begin PBXFileReference section */
 		9A905D0720D58752008BF422 /* ClashHeroesXcode */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ClashHeroesXcode; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A905D0A20D58752008BF422 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		9A905D1220D58851008BF422 /* Combattant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Combattant.swift; sourceTree = "<group>"; };
+		9A9A83B220D95A5400CDC18C /* Mage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mage.swift; sourceTree = "<group>"; };
+		9A9A83B420D95A6100CDC18C /* Nain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Nain.swift; sourceTree = "<group>"; };
+		9A9A83B620D95A7000CDC18C /* Lutin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lutin.swift; sourceTree = "<group>"; };
+		9A9A83B820D95A7D00CDC18C /* Colosse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colosse.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,8 +68,21 @@
 			isa = PBXGroup;
 			children = (
 				9A905D0A20D58752008BF422 /* main.swift */,
+				9A905D1120D58837008BF422 /* Model */,
 			);
 			path = ClashHeroesXcode;
+			sourceTree = "<group>";
+		};
+		9A905D1120D58837008BF422 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9A9A83B420D95A6100CDC18C /* Nain.swift */,
+				9A9A83B820D95A7D00CDC18C /* Colosse.swift */,
+				9A9A83B620D95A7000CDC18C /* Lutin.swift */,
+				9A905D1220D58851008BF422 /* Combattant.swift */,
+				9A9A83B220D95A5400CDC18C /* Mage.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -119,7 +142,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9A9A83B320D95A5400CDC18C /* Mage.swift in Sources */,
 				9A905D0B20D58752008BF422 /* main.swift in Sources */,
+				9A9A83B720D95A7000CDC18C /* Lutin.swift in Sources */,
+				9A905D1320D58851008BF422 /* Combattant.swift in Sources */,
+				9A9A83B920D95A7D00CDC18C /* Colosse.swift in Sources */,
+				9A9A83B520D95A6100CDC18C /* Nain.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
