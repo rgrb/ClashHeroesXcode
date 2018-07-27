@@ -7,12 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9A7C5E562100DF60003832A5 /* Team.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A7C5E552100DF60003832A5 /* Team.swift */; };
+		9A7C5E582100DF6F003832A5 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A7C5E572100DF6F003832A5 /* Player.swift */; };
+		9A7C5E5A2100DF7A003832A5 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A7C5E592100DF7A003832A5 /* Game.swift */; };
+		9A7C5E5C2100DF95003832A5 /* Weapon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A7C5E5B2100DF95003832A5 /* Weapon.swift */; };
 		9A905D0B20D58752008BF422 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A905D0A20D58752008BF422 /* main.swift */; };
-		9A905D1320D58851008BF422 /* Combattant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A905D1220D58851008BF422 /* Combattant.swift */; };
-		9A9A83B320D95A5400CDC18C /* Mage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A9A83B220D95A5400CDC18C /* Mage.swift */; };
-		9A9A83B520D95A6100CDC18C /* Nain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A9A83B420D95A6100CDC18C /* Nain.swift */; };
-		9A9A83B720D95A7000CDC18C /* Lutin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A9A83B620D95A7000CDC18C /* Lutin.swift */; };
-		9A9A83B920D95A7D00CDC18C /* Colosse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A9A83B820D95A7D00CDC18C /* Colosse.swift */; };
+		9AE5EB1021088B5300017680 /* Warrior.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AE5EB0F21088B5300017680 /* Warrior.swift */; };
+		9AE5EB1221088B7000017680 /* Wizzard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AE5EB1121088B7000017680 /* Wizzard.swift */; };
+		9AE5EB1421088BAD00017680 /* Leprechaun.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AE5EB1321088BAD00017680 /* Leprechaun.swift */; };
+		9AE5EB1621088BC600017680 /* Dwarf.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AE5EB1521088BC600017680 /* Dwarf.swift */; };
+		9AE5EB1821088BE200017680 /* Colossus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AE5EB1721088BE200017680 /* Colossus.swift */; };
+		9AE5EB1D21088C8E00017680 /* PlayerClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AE5EB1C21088C8E00017680 /* PlayerClass.swift */; };
+		9AE5EB2021088DE200017680 /* PlayerSpell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AE5EB1F21088DE200017680 /* PlayerSpell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -28,13 +34,19 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		9A7C5E552100DF60003832A5 /* Team.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Team.swift; sourceTree = "<group>"; };
+		9A7C5E572100DF6F003832A5 /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		9A7C5E592100DF7A003832A5 /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
+		9A7C5E5B2100DF95003832A5 /* Weapon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weapon.swift; sourceTree = "<group>"; };
 		9A905D0720D58752008BF422 /* ClashHeroesXcode */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ClashHeroesXcode; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A905D0A20D58752008BF422 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
-		9A905D1220D58851008BF422 /* Combattant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Combattant.swift; sourceTree = "<group>"; };
-		9A9A83B220D95A5400CDC18C /* Mage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mage.swift; sourceTree = "<group>"; };
-		9A9A83B420D95A6100CDC18C /* Nain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Nain.swift; sourceTree = "<group>"; };
-		9A9A83B620D95A7000CDC18C /* Lutin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lutin.swift; sourceTree = "<group>"; };
-		9A9A83B820D95A7D00CDC18C /* Colosse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colosse.swift; sourceTree = "<group>"; };
+		9AE5EB0F21088B5300017680 /* Warrior.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Warrior.swift; sourceTree = "<group>"; };
+		9AE5EB1121088B7000017680 /* Wizzard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wizzard.swift; sourceTree = "<group>"; };
+		9AE5EB1321088BAD00017680 /* Leprechaun.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Leprechaun.swift; sourceTree = "<group>"; };
+		9AE5EB1521088BC600017680 /* Dwarf.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dwarf.swift; sourceTree = "<group>"; };
+		9AE5EB1721088BE200017680 /* Colossus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colossus.swift; sourceTree = "<group>"; };
+		9AE5EB1C21088C8E00017680 /* PlayerClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerClass.swift; sourceTree = "<group>"; };
+		9AE5EB1F21088DE200017680 /* PlayerSpell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerSpell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,13 +88,35 @@
 		9A905D1120D58837008BF422 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				9A9A83B420D95A6100CDC18C /* Nain.swift */,
-				9A9A83B820D95A7D00CDC18C /* Colosse.swift */,
-				9A9A83B620D95A7000CDC18C /* Lutin.swift */,
-				9A905D1220D58851008BF422 /* Combattant.swift */,
-				9A9A83B220D95A5400CDC18C /* Mage.swift */,
+				9AE5EB1E21088DD100017680 /* Spell */,
+				9AE5EB1B21088C4000017680 /* Class */,
+				9A7C5E552100DF60003832A5 /* Team.swift */,
+				9A7C5E572100DF6F003832A5 /* Player.swift */,
+				9A7C5E592100DF7A003832A5 /* Game.swift */,
+				9A7C5E5B2100DF95003832A5 /* Weapon.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		9AE5EB1B21088C4000017680 /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				9AE5EB0F21088B5300017680 /* Warrior.swift */,
+				9AE5EB1321088BAD00017680 /* Leprechaun.swift */,
+				9AE5EB1721088BE200017680 /* Colossus.swift */,
+				9AE5EB1521088BC600017680 /* Dwarf.swift */,
+				9AE5EB1121088B7000017680 /* Wizzard.swift */,
+				9AE5EB1C21088C8E00017680 /* PlayerClass.swift */,
+			);
+			path = Class;
+			sourceTree = "<group>";
+		};
+		9AE5EB1E21088DD100017680 /* Spell */ = {
+			isa = PBXGroup;
+			children = (
+				9AE5EB1F21088DE200017680 /* PlayerSpell.swift */,
+			);
+			path = Spell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -142,12 +176,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9A9A83B320D95A5400CDC18C /* Mage.swift in Sources */,
+				9AE5EB1821088BE200017680 /* Colossus.swift in Sources */,
+				9AE5EB1D21088C8E00017680 /* PlayerClass.swift in Sources */,
+				9AE5EB1021088B5300017680 /* Warrior.swift in Sources */,
+				9AE5EB1221088B7000017680 /* Wizzard.swift in Sources */,
+				9AE5EB1621088BC600017680 /* Dwarf.swift in Sources */,
+				9AE5EB2021088DE200017680 /* PlayerSpell.swift in Sources */,
+				9AE5EB1421088BAD00017680 /* Leprechaun.swift in Sources */,
+				9A7C5E5C2100DF95003832A5 /* Weapon.swift in Sources */,
+				9A7C5E562100DF60003832A5 /* Team.swift in Sources */,
+				9A7C5E582100DF6F003832A5 /* Player.swift in Sources */,
 				9A905D0B20D58752008BF422 /* main.swift in Sources */,
-				9A9A83B720D95A7000CDC18C /* Lutin.swift in Sources */,
-				9A905D1320D58851008BF422 /* Combattant.swift in Sources */,
-				9A9A83B920D95A7D00CDC18C /* Colosse.swift in Sources */,
-				9A9A83B520D95A6100CDC18C /* Nain.swift in Sources */,
+				9A7C5E5A2100DF7A003832A5 /* Game.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
