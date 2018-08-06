@@ -7,7 +7,12 @@
 //
 
 class PlayerClass{
+    var name: String
     var life: Int
-    var Weapon: Weapon
-    var Spell: PlayerSpell
+    var weapon: Weapon
+    required init(){
+        name = "Basic Class"
+        life = 100
+        weapon = Axe.init()
+    }
 }

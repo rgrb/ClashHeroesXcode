@@ -6,4 +6,11 @@
 //  Copyright © 2018 macmini. All rights reserved.
 //
 
-import Foundation
+class Leprechaun: PlayerClass {
+    required init() {
+        super.init()
+        name = "Lutin"
+        life = 110
+        weapon = Stick.init()
+    }
+}

@@ -6,4 +6,11 @@
 //  Copyright © 2018 macmini. All rights reserved.
 //
 
-import Foundation
+class Dwarf: PlayerClass {
+    required init() {
+        super.init()
+        name = "Nain"
+        life = 150
+        weapon = Hammer.init()
+    }
+}

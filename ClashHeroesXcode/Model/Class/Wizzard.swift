@@ -6,4 +6,11 @@
 //  Copyright © 2018 macmini. All rights reserved.
 //
 
-import Foundation
+class Wizzard: PlayerClass {
+    required init() {
+        super.init()
+        name = "Mage"
+        life = 125
+        weapon = Stick.init()
+    }
+}

@@ -6,4 +6,11 @@
 //  Copyright © 2018 macmini. All rights reserved.
 //
 
-import Foundation
+class Colossus: PlayerClass {
+    required init() {
+        super.init()
+        name = "Colosse"
+        life = 85
+        weapon = Hammer.init()
+    }
+}

@@ -6,4 +6,11 @@
 //  Copyright © 2018 macmini. All rights reserved.
 //
 
-import Foundation
+class Warrior: PlayerClass {
+    required init() {
+        super.init()
+        name = "Combattant" 
+        life = 100
+        weapon = IceBlock.init()
+    }
+}

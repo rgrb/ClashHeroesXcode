@@ -9,9 +9,11 @@
 class PlayerSpell{
     var name: String
     var desc: String
-    init() {
+    var spellValue: Int
+    init(){
         name = "Spell"
         desc = "description"
+        spellValue = 15
     }
     func icon(){
         print("--------------------")
@@ -20,7 +22,7 @@ class PlayerSpell{
         print("-   \(self.desc)   -")
         print("--------------------")
     }
-    func SpellEffect(){
+    func SpellEffect(damage: Int){
         
     }
 }
