@@ -7,21 +7,22 @@
 //
 
 func infoClasse (){
-    print("Rentre le nom de la classe que tu souhaite attribué à ton premier personnage")
-    print("----------------------------------------------------------------------------")
-    print("------------------ Combattant -- Mage -- Colosse -- Nain -- Lutin ----------")
-    print("- Degats ---------     10     --   0  --    9    --  18  --   28  ----------")
-    print("- Point de vie ---    100     --  150 --   120   -- 70  --   60  ----------")
-    print("- Armes ----------    Epee    -- Baton - Marteau -- Hache - Coffre ---------")
-    print("----------------------------------------------------------------------------")
+    print("---------------------------------------------------------------------------------")
+    print("- Rentre le nom de la classe que tu souhaite attribué à ton premier personnage --")
+    print("---------------------------------------------------------------------------------")
+    print("---------- Combattant -- Mage -- Colosse -- Nain -- Lutin -----------------------")
+    print("- 💥 -----     10     --   0  --    9    --  18  --   28  -----------------------")
+    print("- ♥️ -----     100    --  150 --   120   --  70  --   60  -----------------------")
+    print("- 🗡 -----    Epee    -- Baton - Marteau -- Hache - Coffre ----------------------")
+    print("---------------------------------------------------------------------------------")
 }
 
 /// this function call in start() in game class when one team are died
 func printdeath(firstTeam: Team, secondTeam: Team){
     if !firstTeam.isAlive(){
-        print("la team \(firstTeam.name) n'as plus de joueur en vie")
+        print("⚰ la team \(firstTeam.name) n'as plus de joueur en vie ⚰")
     }else if !secondTeam.isAlive(){
-        print("la team \(secondTeam.name) n'as plus de joueur en vie")
+        print("⚰ la team \(secondTeam.name) n'as plus de joueur en vie ⚰")
     }
 }
 
@@ -30,7 +31,7 @@ func printdeath(firstTeam: Team, secondTeam: Team){
 /// this function initialized a new game with custom name.
 func rungame(){
     var newGame: Game
-    newGame = Game.init(name: "////////////////   Nouvelle partie: itermRPG  //////////////////")
+    newGame = Game.init(name: "------------------ ⚡️ Nouvelle Partie: HeroesClash ⚡️ ------------------------")
     newGame.start()
 }
 

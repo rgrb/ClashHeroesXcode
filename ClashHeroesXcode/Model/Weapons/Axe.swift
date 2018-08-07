@@ -14,6 +14,6 @@ class Axe: Weapon {
         damage = damagemultiplier(damage: basicdamage, level: level)
         level = 1
         name = "Hache"
-        printForAction = "Choisi le personnage que tu va attaqué"
+        printForAction = "                 ⛏ Choisi le personnage que tu va attaqué ⛏"
     }
 }

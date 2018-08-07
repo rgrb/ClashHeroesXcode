@@ -14,6 +14,6 @@ class Hammer: Weapon {
         damage = damagemultiplier(damage: basicdamage, level: level)
         level = 1
         name = "Marteau"
-        printForAction = "Choisi le personnage que tu va attaqué"
+        printForAction = "                 🔨 Choisi le personnage que tu va attaqué 🔨"
     }
 }

@@ -14,6 +14,6 @@ class Stick: Weapon{
         damage = damagemultiplier(damage: basicdamage, level: level)
         level = 1
         name = "Bâton"
-        printForAction = "Choisi le personnage que tu va soigné"
+        printForAction = "                 ❤️ Choisi le personnage que tu va soigné ❤️"
     }
 }

@@ -9,16 +9,21 @@
 class Team {
     let name: String
     var players: [Player]
-    init(name: String){
+    var icon: String
+    init(name: String, icon: String){
         self.name = name
         self.players = []
+        self.icon = icon
     }
     
     func describe(){
-        print("/////////         //    team \(self.name)    //    ////////////////")
+        print("------------------------------------------------------------------------------")
+        print("---------------------------- \(self.icon)   team \(self.name)   \(self.icon) ------------------------------")
         for item in self.players{
-            print("Pseudo: \(item.pseudo)  Classe: \(item.classe.name) / Dommage: \(item.classe.weapon.damage) / Vie:  \(item.classe.life) / Arme: \(item.classe.weapon.name)")
+            print("--------- Pseudo: \(item.pseudo) / 👨‍👩‍👦‍👦: \(item.classe.name) / 💥: \(item.classe.weapon.damage) / ♥️:  \(item.classe.life) / 🗡: \(item.classe.weapon.name) ----------")
         }
+        print("-------------------------------------------------------------------------------")
+        print("-------------------------------------------------------------------------------")
     }
     
     /// this function check all player, return true if one player or more are alive, but if all player die return false.
@@ -37,7 +42,7 @@ class Team {
             }else{
                 player.lapLocked = player.lapLocked - 1
                 if player.lapLocked == 0 {
-                    print("Le personnage \(player.pseudo) peut joué de nouveau, il n'est plus bloqué")
+                    print("🛡 Le personnage \(player.pseudo) peut joué de nouveau, il n'est plus bloqué 🛡")
                 }
             }
         }
@@ -57,10 +62,13 @@ class Team {
         describe()
         let choice = readLine()!
         if let player = characterindex(pseudocharacter: choice){
-            print("Choix:  / pseudo: \(choice) / Vie: \(player.classe.life) / Dommage: \(player.classe.weapon.damage)")
+            print("-------------------------------------------------------------------------------")
+            print("                 Choix:  / pseudo: \(choice) / ♥️: \(player.classe.life) / 💥: \(player.classe.weapon.damage)")
+            print("-------------------------------------------------------------------------------")
             return player
         }else{
-            return chooseplayer(string: "Mauvais pseudo")
+            return chooseplayer(string: "                 ❗️ Mauvais pseudo ❗️")
+            print("-------------------------------------------------------------------------------")
         }
     }
 }

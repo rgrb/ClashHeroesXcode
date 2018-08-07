@@ -16,8 +16,8 @@ class Game{
         self.name = name
     }
     
-    var redTeam: Team = Team.init(name: "Red")
-    var blueTeam: Team = Team.init(name: "Blue")
+    var redTeam: Team = Team.init(name: "Red", icon: "🔴")
+    var blueTeam: Team = Team.init(name: "Blue", icon: "🔵")
     
     func prinTeam(){
         redTeam.describe()
@@ -34,20 +34,22 @@ class Game{
     func chooseClass() -> PlayerClass {
         if let choiceClass = readLine(), let classe = classList[choiceClass]{
             let newClass: PlayerClass = classe.init()
+            print("-------------------------------------------------------------------------------")
             return newClass
         }else{
-            print("Choisie un nom de classe valide")
+            print("                 ❗️ Choisie un nom de classe valide ❗️")
             return chooseClass()
         }
     }
     
     /// In this function, player write a pseudo and choosePseudo() verify if he exist already, if it's good and pseudo not exist already, function return the pseudo (String) to selectPlayer() but if he exist choosePseudo() are re-launch for a un new writing.
     func choosePseudo() -> String {
-        print("Choisis un pseudonyme unique:")
+        print("-------------------------------------------------------------------------------")
+        print("                 ❓ Choisis un pseudonyme unique: ❓")
         if let choicePseudo = readLine(), redTeam.characterindex(pseudocharacter: choicePseudo) == nil, blueTeam.characterindex(pseudocharacter: choicePseudo) == nil {
             return choicePseudo
         }else{
-            print("Choisie un pseudonyme unique!")
+            print("                 ❗️ Choisie un pseudonyme unique! ❗️")
             return choosePseudo()
         }
     }
@@ -74,19 +76,21 @@ class Game{
     func selectYourTeam(){
         print(name)
         for _ in 0..<3{
-            playerInit(team: redTeam, desc: "[EQUIPE ROUGE]> Choisie une nouvelle classe")
+            print("-------------------------------------------------------------------------------")
+            playerInit(team: redTeam, desc: "                 🔴 [EQUIPE ROUGE]> Choisie une nouvelle classe 🔴")
         }
         for _ in 0..<3{
-            playerInit(team: blueTeam, desc: "[EQUIPE BLEU]> Choisie une nouvelle classe")
+            print("-------------------------------------------------------------------------------")
+            playerInit(team: blueTeam, desc: "                 🔵 [EQUIPE BLEU]> Choisie une nouvelle classe 🔵")
         }
     }
     
     /// fight() are launch in start() with tow parameters teamAttacker: team selected for attack and teamVictim: team selected for die, if the fight it's good and player lost health point or a action sucess the fight continue, but if fight not sucess we re-launch function with same parameter.
     func fight(teamAttacker: Team, teamVictim: Team){
         let victim: Player
-        let attacker = teamAttacker.chooseplayer(string: "Choisi un personnage pour attaqué")
+        let attacker = teamAttacker.chooseplayer(string: "                 ⚔ Choisi un personnage pour attaqué 💣")
         if attacker.lapLocked > 0 {
-            print("Ce personnage est bloqué pendant encore \(attacker.lapLocked) tour(s), choisi en un autre")
+            print("❗️ Ce personnage est bloqué pendant encore \(attacker.lapLocked) tour(s), choisi en un autre ❗️")
             fight(teamAttacker: teamAttacker, teamVictim: teamVictim)
         }
         if attacker.classe.weapon.actionType == .heal {
@@ -111,7 +115,7 @@ class Game{
             Lap = Lap + 1
             redTeam.UnLapLock()
             blueTeam.UnLapLock()
-            print("Tour: \(Lap)")
+            print("                 ⭕️ Tour: \(Lap) ⭕️")
         }
         printdeath(firstTeam: redTeam, secondTeam: blueTeam)
     }

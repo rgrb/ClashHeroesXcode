@@ -14,6 +14,6 @@ class IceBlock:  Weapon {
         damage = damagemultiplier(damage: basicdamage, level: level)
         level = 1
         name = "Bloque de glace"
-        printForAction = "Choisi le personnage que tu va bloqué pendant deux tours"
+        printForAction = "🛡 Choisi le personnage que tu va bloqué pendant deux tours 🛡"
     }
 }
