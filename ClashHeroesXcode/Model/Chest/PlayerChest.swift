@@ -9,17 +9,24 @@
 import Foundation
 
 class BasicChest{
-    var table: [Int:Weapon]
-    var randomNumber: Int
+    var table: [Weapon?]
     var name: String
     init() {
-        table = [1:Axe(), 2:Hammer(), 3:Sword()]
-        randomNumber = Int(arc4random_uniform(UInt32(3)))
+        table = []
         name = "basic"
     }
-    func randomLoot() -> Weapon{
-        var loot: Weapon
-        loot = table[randomNumber]!
+    
+    func randomNumber() -> Int {
+        let countItem = table.count
+        return Int(arc4random_uniform(UInt32(countItem)))
+    }
+    
+    func randomLoot() -> Weapon?{
+        var loot: Weapon?
+        if table.count == 0 {
+            return nil
+        }
+        loot = table[randomNumber()]
         return loot        
     }
 }

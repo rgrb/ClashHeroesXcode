@@ -11,6 +11,6 @@ class Warrior: PlayerClass {
         super.init()
         name = "Combattant" 
         life = 100
-        weapon = IceBlock.init()
+        weapon = Sword.init()
     }
 }

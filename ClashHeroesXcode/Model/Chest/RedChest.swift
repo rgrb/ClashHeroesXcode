@@ -11,8 +11,7 @@ import Foundation
 class redChest: BasicChest {
     override init() {
         super.init()
-        table = [0:Axe(), 1:Hammer(), 2:Sword(), 3:IceBlock()]
-        randomNumber = Int(arc4random_uniform(4))
+        table = [Axe(), Hammer(), Sword(), IceBlock()]
         name = "rouge"
     }
 }

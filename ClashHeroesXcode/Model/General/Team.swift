@@ -38,8 +38,7 @@ class Team {
     
     func UnLapLock(){
         for player in players{
-            if player.lapLocked == 0{
-            }else{
+            if player.lapLocked > 0{
                 player.lapLocked = player.lapLocked - 1
                 if player.lapLocked == 0 {
                     print("🛡 Le personnage \(player.pseudo) peut joué de nouveau, il n'est plus bloqué 🛡")

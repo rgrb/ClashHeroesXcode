@@ -9,7 +9,7 @@
 import Foundation
 
 class Game{
-    let randomChest = [0: blankChest(), 1: blackChest(),2: blankChest(), 3:redChest(), 4: blankChest(), 5:blueChest(), 6: blankChest()]
+    let randomChest = [blankChest(), blackChest(), redChest(),  blankChest(), blueChest(), blankChest()]
     let classList = ["Combattant": Warrior.self, "Nain": Dwarf.self, "Mage": Wizzard.self, "Lutin": Leprechaun.self, "Colosse": Colossus.self]
     
     let name: String
@@ -71,7 +71,7 @@ class Game{
         print(desc)
         let player = selectPlayer()
         team.players.append(player)
-        print(player.describe())
+        player.describe()
     }
     
     /// selectYourTeam() are launch in start(), selectYourTeam() call other function for classe player slection with tow parameter, one string parameter for disting blue or red team and one Team type for select specific team.
@@ -88,20 +88,21 @@ class Game{
     }
     
     func launchChest(attacker: Player){
-        let random = Int(arc4random_uniform(6))
+        let random = Int(arc4random_uniform(UInt32(randomChest.count)))
         let localChest = randomChest[random]
-        let oldWeapon = attacker.classe.weapon
-        let newWeapon = localChest?.randomLoot()
-        attacker.classe.weapon = newWeapon!
-        if attacker.classe.weapon is ErrorWep || oldWeapon.actionType != newWeapon!.actionType{
-            attacker.classe.weapon = oldWeapon
-        }else{
-            print("📦 Un coffre apparait...")
-            print("C'est un coffre \(localChest!.name) à l'intérieur il y a: \(newWeapon!.name)")
-            print("L'attaquant \(attacker.pseudo) a changer d'arme, il avait \(oldWeapon.name) il possède maintenant \(newWeapon!.name)")
-            print("-------------------------------------------------------------------------------")
+        if let newWeapon = localChest.randomLoot() {
+            if attacker.classe.weapon.actionType == newWeapon.actionType {
+                print("📦 Un coffre apparait...")
+                print("C'est un coffre \(localChest.name) à l'intérieur se trouve: \(newWeapon.name)")
+                print("L'attaquant \(attacker.pseudo) a changer d'arme, il possède maintenant \(newWeapon.name) (💥: \(newWeapon.damage))")
+                print("-------------------------------------------------------------------------------")
+                attacker.classe.weapon = newWeapon
+            }else{
+                 print("📦 Un coffre vide apparait...")
+            }
         }
     }
+
     
     /// fight() are launch in start() with tow parameters teamAttacker: team selected for attack and teamVictim: team selected for die, if the fight it's good and player lost health point or a action sucess the fight continue, but if fight not sucess we re-launch function with same parameter.
     func fight(teamAttacker: Team, teamVictim: Team){

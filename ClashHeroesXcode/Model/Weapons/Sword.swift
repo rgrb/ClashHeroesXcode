@@ -9,7 +9,7 @@
 class Sword: Weapon{
     override init() {
         super.init()
-        basicdamage = 100
+        basicdamage = 10
         actionType = .attack
         damage = damagemultiplier(damage: basicdamage, level: level)
         level = 1
