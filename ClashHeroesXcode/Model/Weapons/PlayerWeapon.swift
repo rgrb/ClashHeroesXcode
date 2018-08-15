@@ -30,6 +30,7 @@ class Weapon{
     var name: String
     var actionType: WeaponActionType
     var printForAction: String
+    var icon: String
     init(){
         basicdamage = 10
         damage = 10
@@ -37,7 +38,21 @@ class Weapon{
         name = "Simple arme"
         actionType = .attack /* Utilisé "." au lieu de répété WeaponActionType,"inference de type" */
         printForAction = "Juste un print"
+        icon = ""
     }
+    func changeIcon() -> String {
+        var newIcon: String
+        switch self.actionType {
+        case .attack:
+            newIcon = "💥"
+        case .heal:
+            newIcon = "💚"
+        case .laplocker:
+            newIcon = "🛡"
+        }
+        return newIcon
+    }
+    
     func damagemultiplier(damage: Int, level: Int) -> Int{
         let newdamage: Int = (damage * level)
         return newdamage

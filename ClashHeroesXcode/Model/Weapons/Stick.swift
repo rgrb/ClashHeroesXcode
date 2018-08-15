@@ -15,5 +15,6 @@ class Stick: Weapon{
         level = 1
         name = "Bâton"
         printForAction = "                 ❤️ Choisi le personnage que tu va soigné ❤️"
+        icon = changeIcon()
     }
 }

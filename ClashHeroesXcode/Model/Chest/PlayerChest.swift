@@ -11,9 +11,11 @@ import Foundation
 class BasicChest{
     var table: [Int:Weapon]
     var randomNumber: Int
+    var name: String
     init() {
         table = [1:Axe(), 2:Hammer(), 3:Sword()]
         randomNumber = Int(arc4random_uniform(UInt32(3)))
+        name = "basic"
     }
     func randomLoot() -> Weapon{
         var loot: Weapon

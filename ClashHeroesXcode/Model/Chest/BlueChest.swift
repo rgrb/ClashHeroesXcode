@@ -13,6 +13,6 @@ class blueChest: BasicChest {
         super.init()
         table = [0:Hammer(), 1:Sword()]
         randomNumber = Int(arc4random_uniform(2))
-        
+        name = "bleu"
     }
 }

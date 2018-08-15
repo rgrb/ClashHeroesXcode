@@ -15,5 +15,6 @@ class Hammer: Weapon {
         level = 1
         name = "Marteau"
         printForAction = "                 🔨 Choisi le personnage que tu va attaqué 🔨"
+        icon = changeIcon()
     }
 }

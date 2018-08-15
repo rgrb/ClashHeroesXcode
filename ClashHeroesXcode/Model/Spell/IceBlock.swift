@@ -15,5 +15,6 @@ class IceBlock:  Weapon {
         level = 1
         name = "Bloque de glace"
         printForAction = "🛡 Choisi le personnage que tu va bloqué pendant deux tours 🛡"
+        icon = changeIcon()
     }
 }

@@ -7,3 +7,16 @@
 //
 
 import Foundation
+
+class ErrorWep: Weapon{
+    override init() {
+        super.init()
+        basicdamage = 10
+        actionType = .heal
+        damage = damagemultiplier(damage: basicdamage, level: level)
+        level = 1
+        name = "Error"
+        printForAction = "                 Error"
+        icon = changeIcon()
+    }
+}

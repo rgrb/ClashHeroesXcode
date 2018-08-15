@@ -47,7 +47,7 @@ class Player {
     /// printresultdamage() print different type of "print" for different type of action, he have one paramater, it's player victim inisilized in function attack()
     func printresultdamage(victim: Player){
         if self.classe.weapon.actionType == .attack {
-            print("💔 Le personnage \(victim.pseudo) à subis \(self.classe.weapon.damage) il lui reste \(victim.classe.life) points de vie 💔")
+            print("      💔 Le personnage \(victim.pseudo) à subis \(self.classe.weapon.damage) il lui reste \(victim.classe.life) points de vie 💔")
         }else if self.classe.weapon.actionType == .heal {
             print("❤️ Le personnage \(self.pseudo) à soigné \(victim.pseudo) de \(self.classe.weapon.damage) il a maintenant \(victim.classe.life) points de vie ❤️")
         }else {

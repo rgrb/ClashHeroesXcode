@@ -15,5 +15,6 @@ class FireBall:  Weapon {
         level = 1
         name = "Boule de feu"
         printForAction = "                 🔥 Choisi le personnage que tu va attaqué 🔥"
+        icon = changeIcon()
     }
 }

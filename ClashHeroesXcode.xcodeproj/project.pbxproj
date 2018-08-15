@@ -11,6 +11,8 @@
 		9A7C5E582100DF6F003832A5 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A7C5E572100DF6F003832A5 /* Player.swift */; };
 		9A7C5E5A2100DF7A003832A5 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A7C5E592100DF7A003832A5 /* Game.swift */; };
 		9A7C5E5C2100DF95003832A5 /* PlayerWeapon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A7C5E5B2100DF95003832A5 /* PlayerWeapon.swift */; };
+		9A8556F22119E516008C2BBA /* BlankChest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A8556F12119E516008C2BBA /* BlankChest.swift */; };
+		9A8556F42119EA32008C2BBA /* errorWep.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A8556F32119EA32008C2BBA /* errorWep.swift */; };
 		9A905D0B20D58752008BF422 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A905D0A20D58752008BF422 /* main.swift */; };
 		9ABEF40D2110C43F008570AE /* BlueChest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ABEF40C2110C43F008570AE /* BlueChest.swift */; };
 		9ABEF40F2110C459008570AE /* RedChest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ABEF40E2110C459008570AE /* RedChest.swift */; };
@@ -47,6 +49,8 @@
 		9A7C5E572100DF6F003832A5 /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 		9A7C5E592100DF7A003832A5 /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
 		9A7C5E5B2100DF95003832A5 /* PlayerWeapon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerWeapon.swift; sourceTree = "<group>"; };
+		9A8556F12119E516008C2BBA /* BlankChest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlankChest.swift; sourceTree = "<group>"; };
+		9A8556F32119EA32008C2BBA /* errorWep.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = errorWep.swift; sourceTree = "<group>"; };
 		9A905D0720D58752008BF422 /* ClashHeroesXcode */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ClashHeroesXcode; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A905D0A20D58752008BF422 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		9ABEF40C2110C43F008570AE /* BlueChest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlueChest.swift; sourceTree = "<group>"; };
@@ -122,6 +126,7 @@
 				9ABEF4102110C466008570AE /* BlackChest.swift */,
 				9ABEF40E2110C459008570AE /* RedChest.swift */,
 				9ABEF40C2110C43F008570AE /* BlueChest.swift */,
+				9A8556F12119E516008C2BBA /* BlankChest.swift */,
 			);
 			path = Chest;
 			sourceTree = "<group>";
@@ -130,6 +135,7 @@
 			isa = PBXGroup;
 			children = (
 				9A7C5E5B2100DF95003832A5 /* PlayerWeapon.swift */,
+				9A8556F32119EA32008C2BBA /* errorWep.swift */,
 				9AE5EB26210B36BD00017680 /* Stick.swift */,
 				9AE5EB28210B36C800017680 /* Hammer.swift */,
 				9AE5EB2A210B36D500017680 /* Axe.swift */,
@@ -232,6 +238,7 @@
 				9ABEF4132110C47E008570AE /* PlayerChest.swift in Sources */,
 				9AE5EB1D21088C8E00017680 /* PlayerClass.swift in Sources */,
 				9AE5EB1021088B5300017680 /* Warrior.swift in Sources */,
+				9A8556F42119EA32008C2BBA /* errorWep.swift in Sources */,
 				9AE5EB24210B327300017680 /* IceBlock.swift in Sources */,
 				9AE5EB2B210B36D500017680 /* Axe.swift in Sources */,
 				9AE5EB1221088B7000017680 /* Wizzard.swift in Sources */,
@@ -243,6 +250,7 @@
 				9A7C5E562100DF60003832A5 /* Team.swift in Sources */,
 				9A7C5E582100DF6F003832A5 /* Player.swift in Sources */,
 				9A905D0B20D58752008BF422 /* main.swift in Sources */,
+				9A8556F22119E516008C2BBA /* BlankChest.swift in Sources */,
 				9A7C5E5A2100DF7A003832A5 /* Game.swift in Sources */,
 				9ABEF40D2110C43F008570AE /* BlueChest.swift in Sources */,
 				9ABEF4112110C466008570AE /* BlackChest.swift in Sources */,

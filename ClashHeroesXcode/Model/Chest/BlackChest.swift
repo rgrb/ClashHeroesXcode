@@ -13,5 +13,7 @@ class blackChest: BasicChest {
         super.init()
         table = [0:Axe(), 1:Hammer(), 2:Sword(), 3:FireBall(), 4:IceBlock(), 5:Stick()]
         randomNumber = Int(arc4random_uniform(6))
+        name = "noir"
     }
+
 }

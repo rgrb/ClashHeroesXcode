@@ -7,3 +7,12 @@
 //
 
 import Foundation
+
+class blankChest: BasicChest {
+    override init() {
+        super.init()
+        table = [0:ErrorWep()]
+        randomNumber = Int(arc4random_uniform(0))
+        name = "vide"
+    }
+}

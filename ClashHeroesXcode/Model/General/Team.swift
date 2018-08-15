@@ -20,7 +20,7 @@ class Team {
         print("------------------------------------------------------------------------------")
         print("---------------------------- \(self.icon)   team \(self.name)   \(self.icon) ------------------------------")
         for item in self.players{
-            print("--------- Pseudo: \(item.pseudo) / 👨‍👩‍👦‍👦: \(item.classe.name) / 💥: \(item.classe.weapon.damage) / ♥️:  \(item.classe.life) / 🗡: \(item.classe.weapon.name) ----------")
+            print("--------- Pseudo: \(item.pseudo) / / 🗡: \(item.classe.weapon.name) (\(item.classe.weapon.icon): \(item.classe.weapon.damage) / ♥️:  \(item.classe.life)  ----------")
         }
         print("-------------------------------------------------------------------------------")
         print("-------------------------------------------------------------------------------")
@@ -63,12 +63,11 @@ class Team {
         let choice = readLine()!
         if let player = characterindex(pseudocharacter: choice){
             print("-------------------------------------------------------------------------------")
-            print("                 Choix:  / pseudo: \(choice) / ♥️: \(player.classe.life) / 💥: \(player.classe.weapon.damage)")
+            print("- Choix / pseudo: \(choice) / 👨‍👩‍👦‍👦: \(player.classe.name) / ♥️: \(player.classe.life) / \(player.classe.weapon.icon): \(player.classe.weapon.damage)")
             print("-------------------------------------------------------------------------------")
             return player
         }else{
             return chooseplayer(string: "                 ❗️ Mauvais pseudo ❗️")
-            print("-------------------------------------------------------------------------------")
         }
     }
 }

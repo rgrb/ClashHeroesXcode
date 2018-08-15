@@ -15,5 +15,6 @@ class Sword: Weapon{
         level = 1
         name = "Epée"
         printForAction = "                 ⚔ Choisi le personnage que tu va attaqué ⚔"
+        icon = changeIcon()
     }
 }
